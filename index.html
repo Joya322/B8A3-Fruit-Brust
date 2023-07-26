@@ -17,6 +17,13 @@
       rel="stylesheet"
     />
 
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <style>
       * {
         font-family: "Lato", sans-serif;
@@ -27,7 +34,7 @@
     <!-- header start -->
     <header class="pt-[50px] px-[150px]">
       <nav
-        class="flex justify-between items-center bg-[#F85559] text-white py-[30px] px-[50px] border-none rounded-[600px]"
+        class="flex justify-between items-center bg-[#F85559] text-white py-[20px] px-[50px] border-none rounded-[600px]"
       >
         <!-- menu start -->
         <ul class="flex gap-[30px] text-lg font-medium">
@@ -47,16 +54,16 @@
           <li><a class="text-[40px] font-bold" href="#">Fruit Burst</a></li>
         </ul>
 
-        <form class="flex relative w-[300px]">
+        <form class="relative w-[300px]">
           <input
-            class="w-full py-[17px] pl-[29px] placeholder:text-[#12121266] rounded-[50px] focus:outline-none text-black"
+            class="w-full py-[14px] pl-[29px] placeholder:text-[#12121266] rounded-[50px] focus:outline-none text-black"
             type="search"
             name=""
             id=""
             placeholder="Search here"
           />
           <button
-            class="absolute p-[10px] min-w-[40px] w-[24px] h-[24px] mb-[10px] text-right left-[240px] top-[10px] border-none"
+            class="absolute p-[10px] min-w-[40px] w-[24px] h-[24px] mb-[10px] text-right left-[240px] top-[5px] border-none"
             type="submit"
           >
             <svg
@@ -78,9 +85,448 @@
           </button>
         </form>
       </nav>
+
+      <!-- banner section start -->
+      <div class="banner pt-[56px]">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-gradient-to-b from-[#121212] to-[rgba(18, 18, 18, 0.00)] border-none rounded-lg bg-[url('/images/banner1.png')] bg-opacity-20 bg-transparent"
+          >
+            <img
+              src="/images/banner1.png"
+              class="w-full border-none rounded-lg opacity-80"
+            />
+            <div
+              class="content absolute top-[50%] left-[45%] translate-x-[-40%] translate-y-[-50%] text-[#ffffff] text-center max-w-[900px] h-auto"
+            >
+              <h1 class="text-[72px] font-extrabold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="./images/banner2.png"
+              class="w-full border-none rounded-lg opacity-80"
+            />
+            <div
+              class="content absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[#ffffff] text-center max-w-[670px] h-auto"
+            >
+              <h1 class="text-[72px] font-extrabold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="./images/banner3.png"
+              class="w-full border-none rounded-lg opacity-80"
+            />
+            <div
+              class="content absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[#ffffff] text-center max-w-[670px] h-auto"
+            >
+              <h1 class="text-[72px] font-extrabold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="./images/banner4.png"
+              class="w-full border-none rounded-lg opacity-80"
+            />
+            <div
+              class="content absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[#ffffff] text-center max-w-[690px] h-auto"
+            >
+              <h1 class="text-[72px] font-extrabold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none hover:bg-gray-800"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner section end -->
     </header>
     <!-- header end -->
     <!-- main start -->
+    <main class="py-[140px] px-[150px]">
+      <section>
+        <div class="dealOfTheDay flex justify-center items-center gap-[320px]">
+          <!-- dealContent -->
+          <div class="dealContent">
+            <h3 class="text-[#121212] text-5xl font-extrabold mb-3">
+              Deal of the day
+            </h3>
+            <p class="text-[rgba(18,18,18,0.60)] text-base font-medium">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- dealTime -->
+          <div class="dealTime">
+            <div class="grid grid-flow-col gap-2 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl flex gap-2">
+                  <span style="--value: 15"></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                days
+              </div>
+
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl gap-2">
+                  <span style="--value: 10"></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl gap-2">
+                  <span style="--value: 24"></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 23"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dealCards my-12 flex gap-6">
+          <div
+            class="dealCard flex flex-col justify-center items-center border border-[rgba(18, 18, 18, 0.10)] rounded-lg w-[342px] h-[477px]"
+          >
+            <div class="w-[106px] h-[131px]">
+              <img class="w-[100%] h-[100%]" src="./images/fruit6.png" alt="" />
+            </div>
+            <h4 class="my-12 text-2xl font-bold">12.90$ - 18.85$</h4>
+            <p class="text-base font-medium text-[rgba(18, 18, 18, 0.60)]">
+              Apples
+            </p>
+            <!-- <div class="icons"> -->
+            <svg
+              class="mt-6 mb-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="160"
+              height="24"
+              viewBox="0 0 160 24"
+              fill="none"
+            >
+              <path
+                d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                fill="#FBC0A8"
+              />
+            </svg>
+            <!-- </div> -->
+            <a class="text-[#F85559] text-lg" href="#">Details</a>
+          </div>
+          <div
+            class="dealCard flex flex-col justify-center items-center border border-[rgba(18, 18, 18, 0.10)] rounded-lg w-[342px] h-[477px]"
+          >
+            <div class="w-[106px] h-[131px]">
+              <img class="w-[100%] h-[100%]" src="./images/fruit7.png" alt="" />
+            </div>
+            <h4 class="my-12 text-2xl font-bold">12.90$ - 18.85$</h4>
+            <p class="text-base font-medium text-[rgba(18, 18, 18, 0.60)]">
+              Orange
+            </p>
+            <!-- <div class="icons"> -->
+            <svg
+              class="mt-6 mb-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="160"
+              height="24"
+              viewBox="0 0 160 24"
+              fill="none"
+            >
+              <path
+                d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                fill="#FBC0A8"
+              />
+            </svg>
+            <!-- </div> -->
+            <a class="text-[#F85559] text-lg" href="#">Details</a>
+          </div>
+          <div
+            class="dealCard flex flex-col justify-center items-center border border-[rgba(18, 18, 18, 0.10)] rounded-lg w-[342px] h-[477px]"
+          >
+            <div class="w-[106px] h-[131px]">
+              <img class="w-[100%] h-[100%]" src="./images/fruit8.png" alt="" />
+            </div>
+            <h4 class="my-12 text-2xl font-bold">12.90$ - 18.85$</h4>
+            <p class="text-base font-medium text-[rgba(18, 18, 18, 0.60)]">
+              Red Dragon
+            </p>
+            <!-- <div class="icons"> -->
+            <svg
+              class="mt-6 mb-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="160"
+              height="24"
+              viewBox="0 0 160 24"
+              fill="none"
+            >
+              <path
+                d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                fill="#FBC0A8"
+              />
+            </svg>
+            <!-- </div> -->
+            <a class="text-[#F85559] text-lg" href="#">Details</a>
+          </div>
+          <div
+            class="dealCard flex flex-col justify-center items-center border border-[rgba(18, 18, 18, 0.10)] rounded-lg w-[342px] h-[477px]"
+          >
+            <div class="w-[106px] h-[131px]">
+              <img class="w-[100%] h-[100%]" src="./images/fruit9.png" alt="" />
+            </div>
+            <h4 class="my-12 text-2xl font-bold">12.90$ - 18.85$</h4>
+            <p class="text-base font-medium text-[rgba(18, 18, 18, 0.60)]">
+              Banana
+            </p>
+            <!-- <div class="icons"> -->
+            <svg
+              class="mt-6 mb-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="160"
+              height="24"
+              viewBox="0 0 160 24"
+              fill="none"
+            >
+              <path
+                d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                fill="#F85559"
+              />
+              <path
+                d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                fill="#FBC0A8"
+              />
+              <path
+                d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                fill="#FBC0A8"
+              />
+            </svg>
+            <!-- </div> -->
+            <a class="text-[#F85559] text-lg" href="#">Details</a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <button
+            class="py-[20px] px-[30px] bg-[#F85559] border-none rounded-lg text-xl font-extrabold text-white"
+          >
+            Shop All
+          </button>
+        </div>
+      </section>
+    </main>
     <!-- main end -->
     <!-- footer start -->
     <!-- footer end -->
