@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="p-0 md:pt-[50px] md:px-[150px]">
+    <header class="p-[20px] md:pt-[50px] md:px-[150px]">
       <nav
         class="flex justify-between items-center md:bg-[#F85559] text-white py-[20px] px-[50px] border-none rounded-[600px]"
       >
@@ -313,13 +313,15 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main class="pt-[265px] pb-[140px] px-[150px]">
+    <main class="px-[20px] md:pt-[265px] md:pb-[140px] md:px-[150px]">
       <!-- dealOfTheDay section start-->
       <section>
-        <div class="dealOfTheDay flex justify-center items-center gap-[320px]">
+        <div
+          class="dealOfTheDay flex flex-col md:flex-row justify-center items-center md:gap-[320px] text-center md:text-start"
+        >
           <!-- dealContent -->
-          <div class="dealContent">
-            <h3 class="text-[#121212] text-5xl font-extrabold mb-3">
+          <div class="dealContent px-[30px] mb-5 md:mb-0 md:p-0">
+            <h3 class="text-xl text-[#121212] md:text-5xl font-extrabold mb-3">
               Deal of the day
             </h3>
             <p class="text-[rgba(18,18,18,0.60)] text-base font-medium">
@@ -332,7 +334,7 @@
           <div class="dealTime">
             <div class="grid grid-flow-col gap-2 text-center auto-cols-max">
               <div class="flex flex-col justify-center items-center">
-                <span class="countdown text-5xl flex gap-2">
+                <span class="countdown text-3xl md:text-5xl flex gap-2">
                   <span style="--value: 29"></span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -350,10 +352,10 @@
                     />
                   </svg>
                 </span>
-                <p class="mr-7">days</p>
+                <p class="mr-7 text-[9px] md:text-[16px]">days</p>
               </div>
               <div class="flex flex-col">
-                <span class="countdown text-5xl gap-2">
+                <span class="countdown text-3xl md:text-5xl gap-2">
                   <span style="--value: 15"></span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -374,7 +376,7 @@
                 <p class="mr-7">hours</p>
               </div>
               <div class="flex flex-col">
-                <span class="countdown text-5xl gap-2">
+                <span class="countdown text-3xl md:text-5xl gap-2">
                   <span style="--value: 25"></span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -395,7 +397,7 @@
                 <p class="mr-7">min</p>
               </div>
               <div class="flex flex-col">
-                <span class="countdown text-5xl">
+                <span class="countdown text-3xl md:text-5xl">
                   <span style="--value: 08"></span>
                 </span>
                 <p class="mr-1">sec</p>
