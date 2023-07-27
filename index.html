@@ -30,12 +30,12 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="pt-[50px] px-[150px]">
+    <header class="p-0 md:pt-[50px] md:px-[150px]">
       <nav
-        class="flex justify-between items-center bg-[#F85559] text-white py-[20px] px-[50px] border-none rounded-[600px]"
+        class="flex justify-between items-center md:bg-[#F85559] text-white py-[20px] px-[50px] border-none rounded-[600px]"
       >
         <!-- menu start -->
-        <ul class="flex gap-[30px] text-lg font-medium">
+        <ul class="invisible md:visible flex gap-[30px] text-lg font-medium">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Shop</a></li>
@@ -44,18 +44,40 @@
         <!-- menu end -->
 
         <!-- logo start -->
-        <ul class="flex justify-center items-center gap-5">
-          <li>
-            <a class="w-[54.517px] h-[60px]" href="#"
-              ><img src="./images/logo.png" alt="logo"
-            /></a>
-          </li>
-          <li><a class="text-[40px] font-bold" href="#">Fruit Burst</a></li>
-        </ul>
+        <div class="logo flex gap-1 md:flex-none">
+          <ul class="flex justify-center items-center md:gap-5">
+            <li>
+              <a class="w-[27px] h-[30px] md:w-[54.517px] md:h-[60px]" href="#"
+                ><img src="./images/logo.png" alt="logo"
+              /></a>
+            </li>
+            <li>
+              <a class="text-[20px] font-bold md:text-[40px]" href="#"
+                >Fruit Burst</a
+              >
+            </li>
+          </ul>
+          <svg
+            class="md:invisible"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+              stroke="#121212"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
         <!-- logo end -->
 
         <!-- search bar start -->
-        <form class="relative w-[300px]">
+        <form class="invisible md:visible relative w-[300px]">
           <input
             class="w-full py-[14px] pl-[29px] placeholder:text-[#12121266] rounded-[50px] focus:outline-none text-black"
             type="search"
@@ -102,18 +124,18 @@
               class="w-full border-none rounded-lg"
             />
             <div
-              class="content flex flex-col justify-center items-center text-[#ffffff] text-center w-full h-full bg-gradient-to-b from-[#121212] from-0% to-[rgba(18, 18, 18, 0.00)] to-100% absolute top-0 left-0"
+              class="content flex flex-col justify-center items-center text-[#ffffff] text-center w-full h-full bg-gradient-to-b from-[#121212] from-0% to-[rgba(18,18,18,0.00)] to-100% absolute top-0 left-0"
             >
               <!-- class="content absolute top-[50%] left-[45%] translate-x-[-40%] translate-y-[-50%] text-[#ffffff] text-center max-w-[900px] h-auto bg-gradient-to-b from-[#121212 0%] to-[rgba(18, 18, 18, 0.00) 100%]"
             linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%) -->
-              <h1 class="text-[72px] font-extrabold">
+              <h1 class="text-[24px] md:text-[72px] font-extrabold">
                 Exotic tastes at your<br />doorstep
               </h1>
-              <p class="text-xl font-medium mb-8">
+              <p class="mb-4 text-sm md:text-xl font-medium md:mb-8">
                 We supply highly quality organic products
               </p>
               <button
-                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+                class="text-[18px] py-[9px] px-[18px] md:text-[20px] bg-[#F85559] md:px-[30px] md:py-[20px] border-none rounded-lg md:mb-12"
               >
                 Shop Now
               </button>
@@ -144,14 +166,14 @@
             <div
               class="content flex flex-col justify-center items-center text-[#ffffff] text-center w-full h-full bg-gradient-to-b from-[#121212] from-0% to-[rgba(18, 18, 18, 0.00)] to-100% absolute top-0 left-0"
             >
-              <h1 class="text-[72px] font-extrabold">
+              <h1 class="text-[24px] md:text-[72px] font-extrabold">
                 Exotic tastes at your<br />doorstep
               </h1>
-              <p class="text-xl font-medium mb-8">
+              <p class="mb-4 text-sm md:text-xl font-medium md:mb-8">
                 We supply highly quality organic products
               </p>
               <button
-                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+                class="text-[18px] py-[9px] px-[18px] md:text-[20px] bg-[#F85559] md:px-[30px] md:py-[20px] border-none rounded-lg md:mb-12"
               >
                 Shop Now
               </button>
@@ -182,14 +204,14 @@
             <div
               class="content flex flex-col justify-center items-center text-[#ffffff] text-center w-full h-full bg-gradient-to-b from-[#121212] from-0% to-[rgba(18, 18, 18, 0.00)] to-100% absolute top-0 left-0"
             >
-              <h1 class="text-[72px] font-extrabold">
+              <h1 class="text-[24px] md:text-[72px] font-extrabold">
                 Exotic tastes at your<br />doorstep
               </h1>
-              <p class="text-xl font-medium mb-8">
+              <p class="mb-4 text-sm md:text-xl font-medium md:mb-8">
                 We supply highly quality organic products
               </p>
               <button
-                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+                class="text-[18px] py-[9px] px-[18px] md:text-[20px] bg-[#F85559] md:px-[30px] md:py-[20px] border-none rounded-lg md:mb-12"
               >
                 Shop Now
               </button>
@@ -220,14 +242,14 @@
             <div
               class="content flex flex-col justify-center items-center text-[#ffffff] text-center w-full h-full bg-gradient-to-b from-[#121212] from-0% to-[rgba(18, 18, 18, 0.00)] to-100% absolute top-0 left-0"
             >
-              <h1 class="text-[72px] font-extrabold">
+              <h1 class="text-[24px] md:text-[72px] font-extrabold">
                 Exotic tastes at your<br />doorstep
               </h1>
-              <p class="text-xl font-medium mb-8">
+              <p class="mb-4 text-sm md:text-xl font-medium md:mb-8">
                 We supply highly quality organic products
               </p>
               <button
-                class="bg-[#F85559] px-[30px] py-5 border-none rounded-lg"
+                class="text-[18px] py-[9px] px-[18px] md:text-[20px] bg-[#F85559] md:px-[30px] md:py-[20px] border-none rounded-lg md:mb-12"
               >
                 Shop Now
               </button>
@@ -249,7 +271,7 @@
           </div>
         </div>
         <div
-          class="bannerBelow w-[975.2px] flex justify-between items-center border-none rounded-lg shadow-[0px_8px_60px_0px_rgba(0,0,0,0.05)] absolute top-[490px] bg-white py-11 px-16"
+          class="invisible md:visible bannerBelow w-[975.2px] flex justify-between items-center border-none rounded-lg shadow-[0px_8px_60px_0px_rgba(0,0,0,0.05)] absolute top-[490px] bg-white py-11 px-16"
         >
           <div class="fruitCard flex flex-col justify-center items-center">
             <img class="w-[144px] h-[112px]" src="./images/fruit1.png" alt="" />
@@ -1396,7 +1418,9 @@
 
             <!-- third item start -->
             <div class="chooseUsItem flex flex-col gap-6">
-              <div class="flex flex-row-reverse text-right justify-center items-start gap-6">
+              <div
+                class="flex flex-row-reverse text-right justify-center items-start gap-6"
+              >
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
@@ -1468,7 +1492,9 @@
                 </div>
               </div>
 
-              <div class="flex flex-row-reverse text-right justify-center items-start gap-6">
+              <div
+                class="flex flex-row-reverse text-right justify-center items-start gap-6"
+              >
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
@@ -1501,7 +1527,9 @@
                 </div>
               </div>
 
-              <div class="flex flex-row-reverse text-right justify-center items-start gap-6">
+              <div
+                class="flex flex-row-reverse text-right justify-center items-start gap-6"
+              >
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
