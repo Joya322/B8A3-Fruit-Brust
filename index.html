@@ -28,7 +28,8 @@
       }
     </style>
   </head>
-  <body>
+  <body class="">
+    <!-- bg-red-400 -->
     <!-- header start -->
     <header class="p-[20px] md:pt-[50px] md:px-[150px]">
       <nav
@@ -313,14 +314,14 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main class="px-[20px] md:pt-[265px] md:pb-[140px] md:px-[150px]">
+    <main class="px-[50px] md:pt-[265px] md:pb-[140px] md:px-[150px]">
       <!-- dealOfTheDay section start-->
       <section>
         <div
           class="dealOfTheDay flex flex-col md:flex-row justify-center items-center md:gap-[320px] text-center md:text-start"
         >
           <!-- dealContent -->
-          <div class="dealContent px-[30px] mb-5 md:mb-0 md:p-0">
+          <div class="dealContent mb-5 md:mb-0 md:p-0">
             <h3 class="text-xl text-[#121212] md:text-5xl font-extrabold mb-3">
               Deal of the day
             </h3>
@@ -904,21 +905,25 @@
       <!-- dealOfTheDay section end-->
 
       <!-- team section start-->
-      <section class="py-[140px]">
-        <div class="relative">
-          <img src="./images/team.png" alt="" />
+      <section class="py-[20px] md:py-[140px]">
+        <div class="relative w-[335px] h-[1340px] md:w-auto md:h-auto">
+          <img class="h-full" src="./images/team.png" alt="" />
           <div
-            class="content flex flex-col gap-12 justify-center items-center text-center border-none rounded-lg bg-[#121212] bg-opacity-70 text-white py-[120px] absolute top-0 left-0 w-full h-full"
+            class="content flex flex-col gap-5 md:gap-12 justify-center items-center text-center border-none rounded-lg bg-[#121212] bg-opacity-70 text-white px-[29px] py-[20px] md:px-0 md:py-[120px] absolute top-0 left-0 w-full h-full"
           >
             <div class="text">
-              <h3 class="text-5xl font-extrabold">Meet the team section</h3>
-              <p class="text-base font-medium mt-5">
+              <h3 class="text-xl md:text-5xl font-extrabold">
+                Meet the team section
+              </h3>
+              <p class="text-sm md:text-base font-medium mt-5">
                 Contrary to popular belief, is not simply random text. It has
                 roots in a piece of classical<br />Latin literature from 45 BC,
                 making it over 2000 years old.
               </p>
             </div>
-            <div class="members flex gap-24 justify-center items-center">
+            <div
+              class="members flex flex-col md:flex-row gap-6 md:gap-24 justify-center items-center"
+            >
               <div class="member flex flex-col justify-center items-center">
                 <img
                   class="mb-8 border-none rounded-full"
@@ -1272,19 +1277,21 @@
       <section>
         <div class="chooseUs">
           <div class="chooseUsContent text-center pb-12">
-            <h2 class="text-5xl font-extrabold text-[#121212] mb-6">
+            <h2
+              class="text-xl md:text-5xl font-extrabold text-[#121212] mb-2 md:mb-6"
+            >
               Why Choose Us
             </h2>
-            <p>
+            <p class="text-sm md:text-base">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical<br />Latin literature from 45 BC,
               making it over 2000 years old.
             </p>
           </div>
-          <div class="chooseUsItems flex gap-10">
+          <div class="chooseUsItems flex flex-col md:flex-row gap-10">
             <!-- first item start -->
             <div class="chooseUsItem flex flex-col gap-6">
-              <div class="flex justify-center items-start gap-6">
+              <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
@@ -1301,11 +1308,11 @@
                     />
                   </svg>
                 </div>
-                <div class="text">
+                <div class="text text-center md:text-start">
                   <h4 class="text-2xl font-extrabold text-[#121212] mb-5">
                     Dedicated Team
                   </h4>
-                  <hr class="w-[100px] border-[#121212] mb-4" />
+                  <hr class="w-[100px] border-[#121212] mb-4 inline-block" />
                   <p class="text-base font-medium text-[#121212]">
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -1313,7 +1320,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-center items-start gap-6">
+              <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
@@ -1330,11 +1337,11 @@
                     />
                   </svg>
                 </div>
-                <div class="text">
+                <div class="text text-center md:text-start">
                   <h4 class="text-2xl font-extrabold text-[#121212] mb-5">
                     Fresh is Best
                   </h4>
-                  <hr class="w-[100px] border-[#121212] mb-4" />
+                  <hr class="w-[100px] border-[#121212] mb-4 inline-block" />
                   <p class="text-base font-medium text-[#121212]">
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -1342,7 +1349,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-center items-start gap-6">
+              <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
                 <div
                   class="icon border-none rounded-full bg-[rgba(18,18,18,0.10)] w-[60px] h-60px flex justify-center items-center p-[18px]"
                 >
@@ -1410,11 +1417,11 @@
                     </defs>
                   </svg>
                 </div>
-                <div class="text">
+                <div class="text text-center md:text-start">
                   <h4 class="text-2xl font-extrabold text-[#121212] mb-5">
                     Gift Certificates
                   </h4>
-                  <hr class="w-[100px] border-[#121212] mb-4" />
+                  <hr class="w-[100px] border-[#121212] mb-4 inline-block" />
                   <p class="text-base font-medium text-[#121212]">
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
